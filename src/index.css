@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #0019fc 10%, #000000 100%);
+}
+
+body::before,
+body::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.4;
+}
+
+body::before {
+    clip-path: circle(30% at left 20%);
+    background: linear-gradient(135deg, #F6416C 10%, #ff9a9e 100%);
+}
+
+body::after {
+    clip-path: circle(25% at right 80%);
+    background: linear-gradient(135deg, #F6416C 10%, #0d00ff 100%);
+}
+
+header {
+    height: 85vh;
+    width: 90%;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    margin: auto;
+    border-radius: 25px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    position: relative;
+    z-index: 12;
+}
+
+header .navbar {
+    width: 100%;
+    display: flex;
+    padding: 35px 50px;
+    justify-content: space-between;
+}
+
+header .navbar .logo1 a {
+    font-size: 22px;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+}
+
+header .navbar .menu {
+    display: flex;
+}
+
+.navbar .menu li {
+    list-style: none;
+    margin: 0 6px;
+}
+
+.navbar .menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.navbar .menu a:hover {
+    color: #000;
+}
+
+.navbar .buttons input {
+    color: #f2f2f2;
+    outline: none;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 6px 12px;
+    border-radius: 12px;
+    border: none;
+    cursor:pointer;
+    margin: 0 8px;
+    background: linear-gradient(135deg, #0019fc 10%, #cc00ff 100%);
+}
+
+.navbar .buttons input:hover{
+    transform: scale(0.97);
+}
+
+.text-content { 
+    width: 40%;
+    margin: 100px 0 0 50px;
+    color: #fff;
+}
+
+.text-content h2 {
+    font-size: 27px;
+    font-weight: 600;
+}
+
+.text-content p {
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.links {
+  margin: 100px 0 0 50px; 
+}
+
+.links a i {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.links a i:hover{
+  color:#000;
+}
+
+.links a {
+  padding: 20px;
+}
+
+
+@media screen and (max-width: 850px) {
+    header .navbar{
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar .menu {
+        margin: 10px 0 20px 0;
+    }
+    .text-content {
+        width: 90%;
+        margin: 30px 0 0 20px;
+        text-align: center;
+    }
+    .logo{
+      display: none;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    header {
+        height: 100vh;
+        width: 100%;
+        border-radius: 0;
+    }
+}
+
+.logo {
+  position: relative;
+  width: 30%;
+  float: right;
+  margin-right: 200px;
+  margin-top:50px;
+  animation: logo-spin infinite 20s linear;
+}
+.react {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
