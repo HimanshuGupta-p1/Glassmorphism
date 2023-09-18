@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css");
+
 * {
     margin: 0;
     padding: 0;
@@ -169,7 +170,7 @@ header .navbar .menu {
   float: right;
   margin-right: 200px;
   margin-top:50px;
-  animation: logo-spin infinite 20s linear;
+  /* animation: logo-spin infinite 20s linear; */
 }
 .react {
   filter: drop-shadow(0 0 2em #61dafbaa);

@@ -1,7 +1,5 @@
 import './App.css'
-// import Home from './pages/Home';
 import viteLogo from '/vite.svg'
-// import { BrowserRouter, Routes, Route } from 'react-router-dom'
 function App() {
   const user: any = {
     instagram : "https://www.instagram.com/invites/contact/?i=15qth0sqh0b53&utm_content=kixv2g6",
@@ -30,8 +28,8 @@ function App() {
         </div>
         <img src={viteLogo} className="logo react" alt="logo" />
         <div className="text-content">
-          <div><h2>Learn To Enjoy, <br /> Every Moment of Your life</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum dicta dolorem suscipit ab! Molestias mollitia totam placeat eos sequi ipsam, velit impedit dignissimos magni odit porro eaque sed non voluptates.</p></div>
+          <div><h1>Learn To Build, <br /> Faster with Vite.js</h1>
+            <p>Vite. js is a rapid development tool for modern web projects. It focuses on speed and performance by improving the development experience. Vite uses native browser ES imports to enable support for modern browsers without a build process.</p></div>
           <div className='links'>
             <a href={user.instagram} ><i className="bi bi-instagram"></i></a>
             <a href={user.linkedIn}><i className="bi bi-linkedin"></i></a>
