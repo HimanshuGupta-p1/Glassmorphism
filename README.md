@@ -1,5 +1,7 @@
 # React + TypeScript + Vite
 
+![image](./image.jpeg)
+
 ### ✅ Here is an easy example of Glassmorphism Application made with Vite.js + React + TypeScript
 
 ## To install
